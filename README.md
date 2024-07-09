@@ -14,7 +14,7 @@
 please see the **packages** and **repo** [here!](https://github.com/pxcs/ChapelDirExec/)
 
 ## Requirements
-**cbrutekrag** uses **libssh** - The SSH Library [libssh](http://www.libssh.org/)
+**ChapelDirExec** uses **libssh** - The SSH Library [libssh](http://www.libssh.org/)
 
 ## Build
 
