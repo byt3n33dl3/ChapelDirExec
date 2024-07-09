@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2014-2018 Jorge Matricali
+Copyright (c) 2014-2018 Jorge Matricali - 2024 pxcs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -48,14 +48,15 @@ char *g_output_format = NULL;
 
 void print_banner()
 {
-	printf("\033[92m           _                _       _\n"
-	       "          | |              | |     | |\n"
-	       "\033[37m      ___\033[92m | |__  _ __ _   _| |_ ___| | ___ __ __ _  __ _\n"
-	       "\033[37m     / __|\033[92m| '_ \\| '__| | | | __/ _ \\ |/ / '__/ _` |/ _` |\n"
-	       "\033[37m    | (__ \033[92m| |_) | |  | |_| | ||  __/   <| | | (_| | (_| |\n"
-	       "\033[37m     \\___|\033[92m|_.__/|_|   \\__,_|\\__\\___|_|\\_\\_|  \\__,_|\\__, |\n"
-	       "              \033[0m\033[1mOpenSSH Brute force tool 0.5.0\033[0m\033[92m        __/ |\n"
-	       "          \033[0m(c) Copyright 2014-2022 Jorge Matricali\033[92m  |___/\033[0m\n\n");
+	printf("\033
+ 	  	   "  ____ _                      _ ____  _      _____               
+ 		   " / ___| |__   __ _ _ __   ___| |  _ \(_)_ __| ____|_  _____  ___ 
+		   "| |   | '_ \ / _` | '_ \ / _ \ | | | | | '__|  _| \ \/ / _ \/ __|
+    	   "| |___| | | | (_| | |_) |  __/ | |_| | | |  | |___ >  <  __/ (__ 
+     	   " \____|_| |_|\__,_| .__/ \___|_|____/|_|_|  |_____/_/\_\___|\___|
+           "       			|_|                                            
+		   "		 by pxcs : Copyright 2014-2022 Jorge Matricali
+		   "																;
 }
 
 void usage(const char *p)
