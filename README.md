@@ -25,7 +25,7 @@ Requirements:
 * `libssh-dev`
 
 ```bash
-git clone --depth=1 https://github.com/pxcs/ChapelDirExec.git
+git clone https://github.com/pxcs/ChapelDirExec.git
 cd ChapelDirExec
 make
 make install
@@ -42,7 +42,7 @@ Requirements:
 * `libz-dev`
 
 ```bash
-git clone --depth=1 https://github.com/pxcs/ChapelDirExec.git
+git clone https://github.com/pxcs/ChapelDirExec.git
 cd ChapelDirExec
 bash static-build.sh
 make install
