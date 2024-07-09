@@ -11,8 +11,8 @@ LDFLAGS	+= -L./external/libssh-0.9.3/build/src \
 -ldl \
 -static
 
-NAME	= cbrutekrag
-SRCS	:= cbrutekrag.c \
+NAME	= cde
+SRCS	:= cde.c \
 	log.c \
 	str.c \
 	iprange.c \

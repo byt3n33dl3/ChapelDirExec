@@ -25,7 +25,7 @@ SOFTWARE.
 #include <string.h> /* strlen, malloc, strncpy */
 #include <time.h> /* time_t, time, tm, localtime, strftime */
 
-#include "cbrutekrag.h" /* CBRUTEKRAG_VERBOSE_MODE */
+#include "cde.h" /* cde_VERBOSE_MODE */
 #include "log.h"
 #include "str.h" /* replace_placeholder */
 
@@ -35,7 +35,7 @@ extern char *g_output_format;
 void print_output(int level, const char *file, int line, const char *head,
 		  const char *tail, FILE *stream, const char *format, ...)
 {
-	if (level == LOG_DEBUG && !(g_verbose & CBRUTEKRAG_VERBOSE_MODE)) {
+	if (level == LOG_DEBUG && !(g_verbose & cde_VERBOSE_MODE)) {
 		return;
 	}
 	time_t t = time(NULL);

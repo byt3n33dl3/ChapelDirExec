@@ -33,7 +33,7 @@ SOFTWARE.
 
 #include <libssh/libssh.h>
 
-#include "cbrutekrag.h"
+#include "cde.h"
 #include "detection.h"
 #include "log.h"
 #include "macrowrapper.h"
@@ -54,7 +54,7 @@ int detection_login_methods(btkg_context_t *context, const char *hostname,
 	ssh_session session;
 	int verbosity = 0;
 
-	if (context->verbose & CBRUTEKRAG_VERBOSE_SSHLIB) {
+	if (context->verbose & cde_VERBOSE_SSHLIB) {
 		verbosity = SSH_LOG_PROTOCOL;
 	} else {
 		verbosity = SSH_LOG_NOLOG;
@@ -82,7 +82,7 @@ int detection_login_methods(btkg_context_t *context, const char *hostname,
 	r = ssh_connect(session);
 	if (r != SSH_OK) {
 		ssh_free(session);
-		if (context->verbose & CBRUTEKRAG_VERBOSE_MODE) {
+		if (context->verbose & cde_VERBOSE_MODE) {
 			log_error("[!] Error connecting to %s:%d %s.", hostname,
 				  port, ssh_get_error(session));
 		}

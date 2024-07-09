@@ -25,7 +25,7 @@ SOFTWARE.
 
 #include <stdint.h>
 
-#include "cbrutekrag.h"
+#include "cde.h"
 
 int bruteforce_ssh_login(btkg_context_t *context, const char *hostname,
 			 uint16_t port, const char *username,

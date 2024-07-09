@@ -20,11 +20,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#ifndef CBRUTEKRAG_H
-#define CBRUTEKRAG_H
+#ifndef CDE_H
+#define CDE_H
 
-#define CBRUTEKRAG_VERBOSE_MODE 0x1
-#define CBRUTEKRAG_VERBOSE_SSHLIB 0x2
+#define CDE_VERBOSE_MODE 0x1
+#define CDE_VERBOSE_SSHLIB 0x2
 
 typedef struct {
 	int timeout;
@@ -40,4 +40,4 @@ typedef struct {
 void print_banner(void);
 void usage(const char *p);
 
-#endif /* CBRUTEKRAG_H */
+#endif /* CDE_H */

@@ -33,7 +33,7 @@ SOFTWARE.
 #include <sys/wait.h> /* waitpid */
 
 #include "bruteforce_ssh.h"
-#include "cbrutekrag.h"
+#include "cde.h"
 #include "credentials.h"
 #include "detection.h"
 #include "log.h"
@@ -115,11 +115,11 @@ int main(int argc, char **argv)
 				context.allow_honeypots = 1;
 				break;
 			case 'v':
-				context.verbose |= CBRUTEKRAG_VERBOSE_MODE;
+				context.verbose |= cde_VERBOSE_MODE;
 				g_verbose = context.verbose;
 				break;
 			case 'V':
-				context.verbose |= CBRUTEKRAG_VERBOSE_SSHLIB;
+				context.verbose |= cde_VERBOSE_SSHLIB;
 				break;
 			case 'T':
 				hostnames_filename = strdup(optarg);

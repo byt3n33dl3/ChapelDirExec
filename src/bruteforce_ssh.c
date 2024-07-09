@@ -26,7 +26,7 @@ SOFTWARE.
 
 #include <libssh/libssh.h>
 
-#include "cbrutekrag.h"
+#include "cde.h"
 #include "log.h"
 #include "progressbar.h"
 
@@ -39,7 +39,7 @@ int bruteforce_ssh_login(btkg_context_t *context, const char *hostname,
 	ssh_session my_ssh_session;
 	int verbosity = 0;
 
-	if (context->verbose & CBRUTEKRAG_VERBOSE_SSHLIB) {
+	if (context->verbose & cde_VERBOSE_SSHLIB) {
 		verbosity = SSH_LOG_PROTOCOL;
 	} else {
 		verbosity = SSH_LOG_NOLOG;
@@ -66,7 +66,7 @@ int bruteforce_ssh_login(btkg_context_t *context, const char *hostname,
 	int r;
 	r = ssh_connect(my_ssh_session);
 	if (r != SSH_OK) {
-		if (context->verbose & CBRUTEKRAG_VERBOSE_MODE) {
+		if (context->verbose & cde_VERBOSE_MODE) {
 			log_error("[!] Error connecting to %s:%d %s.", hostname,
 				  port, ssh_get_error(my_ssh_session));
 		}

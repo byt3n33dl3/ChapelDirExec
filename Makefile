@@ -3,8 +3,8 @@ CC	= gcc
 CFLAGS	+= -pedantic -Wconversion -Wall -Werror -Wextra -Wstrict-prototypes -std=gnu99 -O3 -Iinclude -g
 LDFLAGS	+= -lpthread -lssh -lrt -rdynamic
 
-NAME	= cbrutekrag
-SRCS	:= cbrutekrag.c \
+NAME	= cde
+SRCS	:= cde.c \
 	log.c \
 	str.c \
 	iprange.c \
